@@ -729,6 +729,10 @@ button:active {
 	}
 }
 @media (max-width: 550px) {
+	.block-top .block-top__flex-box {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 	
 	.block-bike {
 		.block-bike__grid-box {
@@ -779,7 +783,7 @@ button:active {
 		.block-jump__form .mail {
 			margin-right: 0px;
 		}
-		.block-jump .Subscribe {
+		.Subscribe {
 			top: -3%;
 		}
 		.block-jump__text {
@@ -801,10 +805,6 @@ button:active {
 	.block-top .block-top__container {
 		padding-top: 5.05vw;
 	}
-	.block-top .block-top__flex-box {
-		display: flex;
-		flex-direction: column-reverse;
-	}
 	.block-bike {
 		.block-bike__grid-box {
 			grid-template-areas:
@@ -817,6 +817,9 @@ button:active {
 		display: flex;
 		flex-direction: column;
 	}
+	.block-jump .Subscribe {
+		top: -4%;
+  }
 }
 
 @keyframes animal {
