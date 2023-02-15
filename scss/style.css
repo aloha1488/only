@@ -256,6 +256,12 @@ button:active {
 .block-bike .block-bike__grid-box .block-bike__element div {
   margin-bottom: 17px;
 }
+.block-bike .block-bike__grid-box .block-bike__element img:hover {
+  transform: scale(1.1);
+}
+.block-bike .block-bike__grid-box .block-bike__element:hover {
+  text-shadow: 1px 1px 0px rgba(116, 116, 116, 0.429);
+}
 .block-bike .block-bike__grid-box .block-bike__element1 {
   grid-area: n1;
 }
@@ -384,7 +390,7 @@ button:active {
   color: #ffffff;
 }
 .block-jump .block-jump__form .submit-a:hover {
-  background: #de355f;
+  background: #8e223d;
 }
 
 .block-column {

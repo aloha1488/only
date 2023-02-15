@@ -101,6 +101,10 @@ textarea.form__input {
 .file__item {
 	position: relative;
 }
+.file__item:hover {
+	text-shadow: 2px 2px 0px rgba(64, 63, 63, 0.698);
+	
+}
 .file__input {
 	position: absolute;
 	top: 0;

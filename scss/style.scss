@@ -271,7 +271,15 @@ button:active {
 		.block-bike__element {
 			div {
 				margin-bottom: 17px;
+				//padding: 5px;
 			}
+			img:hover{
+				//cursor: wait;
+				transform: scale(1.1);
+			}
+		}
+		.block-bike__element:hover {
+			text-shadow: 1px 1px 0px rgba(116, 116, 116, 0.429);
 		}
 		.block-bike__element1 {
 			grid-area: n1;
@@ -404,7 +412,7 @@ button:active {
 			color: #ffffff;
 		}
 		.submit-a:hover {
-			background: #de355f;
+			background: #8e223d;
 		}
 	}
 }
@@ -819,7 +827,7 @@ button:active {
 	}
 	.block-jump .Subscribe {
 		top: -4%;
-  }
+   }
 }
 
 @keyframes animal {
