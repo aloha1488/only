@@ -1,0 +1,82 @@
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+
+.page__header {
+	display: flex;
+	
+	align-items: center;
+	
+}
+
+.page__theme{
+	width: 100px;
+	height: 100px;
+	
+	cursor: pointer;
+}
+.page__action{
+	position: relative;
+	margin: 10px;
+}
+.page__reset{
+	opacity: 0;
+	visibility: hidden;
+}
+.page__reset.active{
+	opacity: 1;
+	visibility: visible;
+}
+.page__reset::before{
+	content:"x";
+	position: absolute;
+	top: 13px;
+	right: 20px;
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	font-size: 7px;
+	border-radius: 50%;
+	line-height: 9px;
+	color: #fff;
+	text-align: center;
+	background-color: #666;
+}
+
+
+.wrap {
+	transition: all 0.3s ease 0s;
+	background-color: #fff;
+	color: #333;
+	
+}
+
+html.dark .wrap {
+	
+	background-color: #bc9b91;
+}
+html.light .wrap {
+	background-color: #fff;
+	
+}
+ 
+html.dark .page__theme {
+	background: url('../img/big/doodle-3r.png') 0 0 / 100% no-repeat;
+}
+html.light .page__theme {
+	background: url('../img/big/doodle-3.png') 0 0 / 100% no-repeat;
+}
