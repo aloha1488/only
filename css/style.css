@@ -127,6 +127,9 @@ textarea.form__input {
 .file__preview img {
 	max-width: 100%;
 }
+.checkbox span {
+	padding-left: 20px;
+}
 .checkbox._error .checkbox__label::before {
 	box-shadow: 0 0 15px red;
 }

@@ -85,27 +85,27 @@ button:active {
 .block-top .block-top__head {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .block-top .block-top__head .head__menu {
   display: flex;
   margin: auto 0;
+  justify-content: space-between;
 }
 .block-top .block-top__head .head__menu .menu {
-  margin: 0 18px;
-  position: relative;
-  z-index: 2;
+  margin: 0 20px;
 }
 .block-top .block-top__head .head__menu .menu__list {
   display: none;
   position: absolute;
-  min-width: 200px;
-  top: 35px;
-  left: -25%;
+  left: 25%;
+  right: 25%;
+  top: 100%;
   color: #737b7d;
   line-height: 26px;
-  padding: 10px;
+  padding: 22px;
   border-radius: 16px;
-  background: rgba(255, 166, 2, 0.778);
+  background: rgba(100, 175, 166, 0.93);
   z-index: 3;
 }
 .block-top .block-top__head .head__menu .menu__list a {
@@ -128,6 +128,10 @@ button:active {
 }
 .block-top .block-top__head .head__menu .menu._active .menu__list {
   display: block;
+  line-height: 40px;
+}
+.block-top .block-top__head .head__sing {
+  white-space: nowrap;
 }
 .block-top .block-top__head .head__sing .button__sign-in {
   color: #3c64b1;
@@ -332,6 +336,7 @@ button:active {
 }
 .block-jump .Subscribe a {
   color: #ffa3ab;
+  max-width: 200px;
 }
 .block-jump a:hover {
   color: #4f4f4f;
@@ -366,13 +371,13 @@ button:active {
   border-radius: 12px;
   background-color: #ffffff;
   margin-right: 24px;
+  margin-bottom: 5px;
 }
 .block-jump .block-jump__form .mail:hover {
   box-shadow: 0 0 2px #000000;
 }
 .block-jump .block-jump__form .submit-a {
   position: relative;
-  width: 104px;
   background: #f73c6b;
   border-radius: 12px;
   padding: 12px 18px;
@@ -587,7 +592,7 @@ button:active {
   .block-bike .block-bike__grid-box .block-bike__element-bike {
     transform: translate(50%, -54%);
   }
-  .block-jump button {
+  .block-jump .Subscribe {
     top: 6%;
     right: 38%;
     font-size: calc(49px + 0 * ((100vw - 320px) / 1120));
@@ -606,11 +611,14 @@ button:active {
   }
 }
 @media (max-width: 1100px) {
-  .block-jump button {
+  .block-jump .Subscribe {
     top: 1vw;
   }
 }
 @media (max-width: 750px) {
+  .block-top .block-top__container {
+    padding-top: 5.05vw;
+  }
   .block-top .block-top__head {
     flex-wrap: wrap;
   }
@@ -622,9 +630,17 @@ button:active {
     order: 3;
     margin: 25px 0;
   }
+  .block-top .block-top__head .head__menu .menu__list {
+    left: 15%;
+    right: 15%;
+    top: 100%;
+  }
   .block-think .block-think__img {
     max-width: 100px;
     max-height: 100px;
+  }
+  .block-think .block-think__img img {
+    max-width: 70%;
   }
   .block-think .block-think__flex-box {
     flex-wrap: wrap;
@@ -647,7 +663,7 @@ button:active {
   .block-jump .block-jump__container {
     padding: 74px 50px;
   }
-  .block-jump button {
+  .block-jump .Subscribe {
     top: -2%;
   }
   .footer .footer__zayob {
@@ -666,17 +682,11 @@ button:active {
   .footer .footer__block-top .footer__top-flex .footer__block-top-r {
     flex: 0 0 100%;
   }
+  .block-column .block-column__flex-column {
+    justify-items: center;
+  }
 }
 @media (max-width: 550px) {
-  .block-top .block-top__head .head__menu {
-    position: relative;
-  }
-  .block-top .block-top__head .head__menu .menu {
-    position: unset;
-  }
-  .block-top .block-top__head .head__menu .menu__list {
-    left: 0%;
-  }
   .block-bike .block-bike__grid-box {
     position: relative;
     margin: 0 8.47vw;
@@ -709,7 +719,7 @@ button:active {
     padding: 74px 0px;
   }
   .block-bike .block-bike__grid-box {
-    margin: 0 10px;
+    margin: 0 20px;
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -720,8 +730,37 @@ button:active {
   .block-jump .block-jump__form .mail {
     margin-right: 0px;
   }
-  .block-jump button {
+  .block-jump .block-jump .Subscribe {
     top: -3%;
+  }
+  .block-jump .block-jump__text {
+    max-width: 70vw;
+  }
+  .block-column .block-column__top {
+    padding: 50px 0 25px 0;
+    flex-direction: column;
+  }
+  .block-column .block-column__top .block-column__knopka-hz {
+    margin: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .block-top .block-top__head .head__menu .menu {
+    margin: 0 8px;
+  }
+  .block-top .block-top__container {
+    padding-top: 5.05vw;
+  }
+  .block-top .block-top__flex-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .block-bike .block-bike__grid-box {
+    grid-template-areas: "n1 n2" "n3 n4" "n5 n6";
+  }
+  .block-run .block-run__flex-box {
+    display: flex;
+    flex-direction: column;
   }
 }
 @keyframes animal {
