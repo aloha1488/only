@@ -194,7 +194,6 @@ button:active {
 	}
 }
 .block-think {
-	
 	.block-think__flex-box {
 		margin-top: 23px;
 		display: flex;
@@ -301,7 +300,7 @@ button:active {
 				//padding: 5px;
 			}
 			img:hover {
-				//cursor: wait;
+				cursor: grab;
 				transform: scale(1.1);
 			}
 		}
@@ -501,12 +500,14 @@ button:active {
 		}
 		.block-column__knopka-hz {
 			margin-right: 40px;
+
 			button {
-				//color: #482607;
+				color: #482607;
 				background: url("../img/Arrow.png") 98% 0 no-repeat;
 				padding-right: 30px;
 				height: 30px;
 				padding: 0px 30px 5px 0;
+				border-bottom: 1px solid #373f4149;
 			}
 			button:hover {
 				color: #482607;
@@ -598,6 +599,7 @@ button:active {
 	}
 	.footer__container {
 		padding: 23px 0 80px 0;
+		//	position: relative;
 	}
 	.footer__block-top {
 		border-bottom: 1px solid #000000;
@@ -627,7 +629,8 @@ button:active {
 					margin: 0 30px;
 					li:first-child {
 						margin-bottom: 38.68px;
-						a {
+						a,
+						p {
 							font-size: 1.125rem;
 							line-height: 135%;
 							letter-spacing: -0.01em;
@@ -635,13 +638,67 @@ button:active {
 							opacity: 0.5;
 						}
 					}
-					li {
-						a {
-							line-height: 135%;
-							letter-spacing: -0.01em;
-							color: #555555;
-						}
+					li,
+					a,
+					button,
+					p {
+						line-height: 135%;
+						letter-spacing: -0.01em;
+						color: #555555;
+						white-space: normal;
 					}
+				}
+				.demos {
+					position: relative;
+				}
+				.demos-info {
+					position: absolute;
+					top: 95%;
+					left: 51px;
+					width: 169px;
+					background-color: #ffffffc1;
+					padding: 10px;
+					border-radius: 0 16px 16px 16px;
+					display: none;
+				}
+				.demos:active .demos-info {
+					display: block;
+				}
+				.pages-info {
+					position: absolute;
+					z-index: 3;
+					background-color: #fffffffb;
+					padding: 40px;
+					border-radius: 16px;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%) scale(0);
+					opacity: 0;
+					transition: all 0.5s ease 0.2s;
+					visibility: hidden;
+				}
+				._active-f .pages-info {
+						visibility: visible;
+						opacity: 1;
+						transform: translate(-50%, -50%) scale(1);
+						transition: all 0.5s ease 0s;
+					}
+				.pages__cont {
+					text-align: center;
+					line-height: 2.5;
+					p:first-child{
+						font-weight: 700;
+					}
+				}
+				.pages__clouse {
+					position: absolute;
+					top: 10px;
+					right: 20px;
+					font-size: 20px;
+					color: #000000;
+				}
+				.pages__clouse:hover {
+					color: #350606;
 				}
 			}
 		}
@@ -752,9 +809,8 @@ button:active {
 			top: 1vw;
 		}
 	}
-	.block-think .block-think__flex-box .block-think__right-box{
-		
-			align-self: auto;
+	.block-think .block-think__flex-box .block-think__right-box {
+		align-self: auto;
 	}
 }
 @media (max-width: 750px) {

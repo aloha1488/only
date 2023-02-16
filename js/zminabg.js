@@ -1,14 +1,10 @@
 "use strict"
-
 window.addEventListener("load", windowLoad);
-
 function windowLoad() {
 	// HTML
 	const htmlBlock = document.documentElement;
-
 	// Отримуємо збережену тему
 	const saveUserTheme = localStorage.getItem('user-theme');
-
 	// Робота з системними налаштуваннями
 	let userTheme;
 	if (window.matchMedia) {
@@ -17,7 +13,6 @@ function windowLoad() {
 	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
 		!saveUserTheme ? changeTheme() : null;
 	});
-
 	// Зміна теми по кліку
 	const themeButton = document.querySelector('.page__theme');
 	const resetButton = document.querySelector('.page__reset');
@@ -33,7 +28,6 @@ function windowLoad() {
 			localStorage.setItem('user-theme', '');
 		});
 	}
-
 	// Функція додавання класу теми
 	function setThemeClass() {
 		if (saveUserTheme) {
@@ -45,12 +39,10 @@ function windowLoad() {
 	}
 	// Додаємо клас теми
 	setThemeClass();
-
 	// Функція зміни теми
 	function changeTheme(saveTheme = false) {
 		let currentTheme = htmlBlock.classList.contains('light') ? 'light' : 'dark';
 		let newTheme;
-
 		if (currentTheme === 'light') {
 			newTheme = 'dark';
 		} else if (currentTheme === 'dark') {
@@ -60,12 +52,42 @@ function windowLoad() {
 		htmlBlock.classList.add(newTheme);
 		saveTheme ? localStorage.setItem('user-theme', newTheme) : null;
 	}
-
-
 }
 
-
-
-
-
-
+const menus = document.querySelector('.footer');
+const menut = document.querySelector('.block-jump');
+const menub = document.querySelector('.block-bike__top');
+const menul = document.querySelector('.block-top');
+document.addEventListener("click", menu);
+function menu(event) {
+	if (event.target.closest('.dark-theme')) {
+		menus.classList.remove('_Light');
+		menut.classList.remove('_Light1');
+		menub.classList.remove('_Light2');
+		menul.classList.remove('_Light3');
+		menus.classList.toggle('_Dark');
+		menut.classList.toggle('_Dark1');
+		menub.classList.toggle('_Dark2');
+		menul.classList.toggle('_Dark3');
+	}
+	if (event.target.closest('.light-theme')) {
+		menus.classList.remove('_Dark');
+		menut.classList.remove('_Dark1');
+		menub.classList.remove('_Dark2');
+		menul.classList.remove('_Dark3');
+		menus.classList.toggle('_Light');
+		menut.classList.toggle('_Light1');
+		menub.classList.toggle('_Light2');
+		menul.classList.toggle('_Light3');
+	}
+	if (event.target.closest('.classic-theme')) {
+		menus.classList.remove('_Dark');
+		menut.classList.remove('_Dark1');
+		menub.classList.remove('_Dark2');
+		menul.classList.remove('_Dark3');
+		menus.classList.remove('_Light');
+		menut.classList.remove('_Light1');
+		menub.classList.remove('_Light2');
+		menul.classList.remove('_Light3');
+	}
+}

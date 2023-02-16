@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -7,26 +6,19 @@
 	border: 0;
 	box-sizing: border-box;
 }
-
 button {
 	background-color: inherit;
 	font-weight: inherit;
 	font-size: inherit;
 	color: inherit;
 }
-
-
 .page__header {
 	display: flex;
-	
-	align-items: center;
-	
+	align-items: center;	
 }
-
 .page__theme{
 	width: 100px;
 	height: 100px;
-	
 	cursor: pointer;
 }
 .page__action{
@@ -56,27 +48,47 @@ button {
 	text-align: center;
 	background-color: #666;
 }
-
-
 .wrap {
 	transition: all 0.3s ease 0s;
 	background-color: #fff;
 	color: #333;
 	
 }
-
 html.dark .wrap {
 	
-	background-color: #bc9b91;
+	background-color: #fee7e0;
 }
 html.light .wrap {
 	background-color: #fff;
 	
 }
- 
 html.dark .page__theme {
 	background: url('../img/big/doodle-3r.png') 0 0 / 100% no-repeat;
 }
 html.light .page__theme {
 	background: url('../img/big/doodle-3.png') 0 0 / 100% no-repeat;
+}
+._Dark {
+	background: rgba(1, 122, 49, 0.866)
+}
+.block-bike ._Dark2{
+	background: rgba(1, 122, 49, 0.866)
+}
+._Dark1{
+	background: rgba(100, 15, 22, 0.769);
+}
+._Dark3{
+	background: rgba(193, 127, 4, 0.803);
+}
+._Light {
+	background: rgba(184, 236, 210, 0.866)
+}
+.block-bike ._Light2{
+	background: rgba(124, 213, 160, 0.866)
+}
+._Light1{
+	background: rgba(213, 127, 134, 0.769);
+}
+._Light3{
+	background: rgba(231, 203, 151, 0.803);
 }
