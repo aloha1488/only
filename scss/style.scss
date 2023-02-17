@@ -5,7 +5,6 @@ $maxWidth: 1440; // ширина екрану  макета
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
-
 %par1 {
 	animation-name: animal;
 	animation-duration: 300s;
@@ -85,7 +84,6 @@ button:hover {
 button:active {
 	font-size: 1.1rem;
 }
-
 .block-top {
 	background: rgba(255, 165, 2, 0.5);
 	.block-top__container {
@@ -111,6 +109,7 @@ button:active {
 				left: 25%;
 				right: 25%;
 				top: 100%;
+				text-align: center;
 				//color: #737b7d;
 				line-height: 26px;
 				padding: 22px;
@@ -217,10 +216,6 @@ button:active {
 				.block-think__row-text {
 					color: #ffffff;
 				}
-			}
-			.block-think__row1 {
-			}
-			.block-think__row2 {
 			}
 			.block-think__row3 {
 				margin: 0 0 0px 18px;
@@ -500,7 +495,6 @@ button:active {
 		}
 		.block-column__knopka-hz {
 			margin-right: 40px;
-
 			button {
 				color: #482607;
 				background: url("../img/Arrow.png") 98% 0 no-repeat;
@@ -599,7 +593,6 @@ button:active {
 	}
 	.footer__container {
 		padding: 23px 0 80px 0;
-		//	position: relative;
 	}
 	.footer__block-top {
 		border-bottom: 1px solid #000000;
@@ -676,17 +669,18 @@ button:active {
 					opacity: 0;
 					transition: all 0.5s ease 0.2s;
 					visibility: hidden;
+					//max-height: 500px;
 				}
 				._active-f .pages-info {
-						visibility: visible;
-						opacity: 1;
-						transform: translate(-50%, -50%) scale(1);
-						transition: all 0.5s ease 0s;
-					}
+					visibility: visible;
+					opacity: 1;
+					transform: translate(-50%, -50%) scale(1);
+					transition: all 0.5s ease 0s;
+				}
 				.pages__cont {
 					text-align: center;
 					line-height: 2.5;
-					p:first-child{
+					p:first-child {
 						font-weight: 700;
 					}
 				}
@@ -694,7 +688,7 @@ button:active {
 					position: absolute;
 					top: 10px;
 					right: 20px;
-					font-size: 20px;
+					font-size: 1.25rem;
 					color: #000000;
 				}
 				.pages__clouse:hover {
@@ -809,8 +803,11 @@ button:active {
 			top: 1vw;
 		}
 	}
-	.block-think .block-think__flex-box .block-think__right-box {
-		align-self: auto;
+	.block-think .block-think__flex-box {
+		padding-bottom: 70px;
+		.block-think__right-box {
+			align-self: auto;
+		}
 	}
 }
 @media (max-width: 750px) {
@@ -877,6 +874,9 @@ button:active {
 		}
 		.footer__block-top .footer__top-flex .footer__block-top-r {
 			flex: 0 0 100%;
+			.pages-info {
+			width: 80vw;
+			}
 		}
 	}
 	.block-column .block-column__flex-column {
@@ -888,7 +888,6 @@ button:active {
 		display: flex;
 		flex-direction: column-reverse;
 	}
-
 	.block-bike {
 		.block-bike__grid-box {
 			position: relative;
@@ -915,7 +914,7 @@ button:active {
 			ul li {
 				margin: 0 8px;
 				a {
-					font-size: 16px;
+					font-size: 1rem;
 					line-height: 135%;
 					letter-spacing: -0.01em;
 					color: #000000;
@@ -976,7 +975,6 @@ button:active {
 		top: -4%;
 	}
 }
-
 @keyframes animal {
 	0% {
 		transform: rotate(360deg);

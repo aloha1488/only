@@ -112,6 +112,7 @@ button:active {
   left: 25%;
   right: 25%;
   top: 100%;
+  text-align: center;
   line-height: 26px;
   padding: 22px;
   border-radius: 16px;
@@ -665,7 +666,7 @@ button:active {
   position: absolute;
   top: 10px;
   right: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #000000;
 }
 .footer .footer__block-top .footer__top-flex .footer__block-top-r .pages__clouse:hover {
@@ -764,6 +765,9 @@ button:active {
   .block-jump .Subscribe {
     top: 1vw;
   }
+  .block-think .block-think__flex-box {
+    padding-bottom: 70px;
+  }
   .block-think .block-think__flex-box .block-think__right-box {
     align-self: auto;
   }
@@ -828,6 +832,9 @@ button:active {
   .footer .footer__block-top .footer__top-flex .footer__block-top-r {
     flex: 0 0 100%;
   }
+  .footer .footer__block-top .footer__top-flex .footer__block-top-r .pages-info {
+    width: 80vw;
+  }
   .block-column .block-column__flex-column {
     justify-items: center;
   }
@@ -860,7 +867,7 @@ button:active {
     margin: 0 8px;
   }
   .footer .footer__block-top .footer__block-menu ul li a {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 135%;
     letter-spacing: -0.01em;
     color: #000000;
