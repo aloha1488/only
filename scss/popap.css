@@ -1,5 +1,9 @@
 body.lock {
   overflow: hidden;
+  margin: 0 auto;
+}
+body.lock .style {
+  padding-right: 0;
 }
 
 .popup {

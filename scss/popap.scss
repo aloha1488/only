@@ -1,6 +1,9 @@
-
 body.lock {
 	overflow: hidden;
+	margin: 0 auto;
+	.style {
+		padding-right: 0;
+	}
 }
 .popup {
 	position: fixed;
@@ -34,7 +37,7 @@ body.lock {
 	max-width: 800px;
 	position: relative;
 	padding: 30px;
-	background-color:rgb(5 92 141 / 83%);
+	background-color: rgb(5 92 141 / 83%);
 	transition: all 1s ease 0s;
 	opacity: 0;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
@@ -52,27 +55,25 @@ body.lock {
 }
 // попап другий для реєстрації
 .popup__content-sing {
-	background-color:rgb(113 104 70 / 83%);
+	background-color: rgb(113 104 70 / 83%);
 }
 // попап автор
 
 .popup__content-aph {
-	background-color:#373f41e8;
+	background-color: #373f41e8;
 }
 .aphtor {
 	display: flex;
 }
 .bart {
 	margin: 30px;
-	img{
+	img {
 		max-width: 100%;
 	}
 }
 .bender {
 	margin: 30px;
-	img{
+	img {
 		max-width: 100%;
 	}
 }
-
-
