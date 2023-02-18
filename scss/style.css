@@ -714,6 +714,9 @@ button:active {
     max-width: 445px;
     margin: 70px 70px;
   }
+  .block-top .block-top__flex-box .block-top__box-rigth .block-top__title {
+    line-height: 119%;
+  }
   .block-bike .block-bike__top {
     padding: 68px 0;
   }

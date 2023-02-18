@@ -36,7 +36,6 @@ body {
 	background: #626161;
 	letter-spacing: 0.3px;
 	line-height: 22px;
-	
 }
 .wrapper {
 	max-width: 1440px;
@@ -742,6 +741,9 @@ button:active {
 		.block-top__flex-box .block-top__box-rigth {
 			max-width: 445px;
 			margin: 70px 70px;
+			.block-top__title {
+				line-height: 119%;
+			}
 		}
 	}
 	.block-bike {
@@ -876,7 +878,7 @@ button:active {
 		.footer__block-top .footer__top-flex .footer__block-top-r {
 			flex: 0 0 100%;
 			.pages-info {
-			width: 80vw;
+				width: 80vw;
 			}
 		}
 	}
