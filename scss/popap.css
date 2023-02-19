@@ -41,7 +41,7 @@ body.lock .style {
   max-width: 800px;
   position: relative;
   padding: 30px;
-  background-color: rgba(5, 92, 141, 0.83);
+  background-color: rgba(230, 236, 240, 0.83);
   transition: all 1s ease 0s;
   opacity: 0;
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);

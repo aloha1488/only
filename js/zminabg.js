@@ -6,13 +6,13 @@ function windowLoad() {
 	// Отримуємо збережену тему
 	const saveUserTheme = localStorage.getItem('user-theme');
 	// Робота з системними налаштуваннями
-	let userTheme;
+	/*let userTheme;
 	if (window.matchMedia) {
 		userTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 	}
 	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
 		!saveUserTheme ? changeTheme() : null;
-	});
+	})*/
 	// Зміна теми по кліку
 	const themeButton = document.querySelector('.page__theme');
 	const resetButton = document.querySelector('.page__reset');

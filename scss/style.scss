@@ -30,10 +30,11 @@ html {
 	font-size: 20px;
 }
 body {
-	//font-family: "Quicksand", sans-serif;
+	font-family: "Quicksand", sans-serif;
 	//font-family: 'Caveat', sans-serif;
-	font-family: "Dancing Script", cursive;
-	background: #626161;
+	//font-family: "Dancing Script", cursive;
+	//background: #626161;
+	background: url(../img/dally.png);
 	letter-spacing: 0.3px;
 	line-height: 22px;
 }
@@ -421,7 +422,7 @@ button:active {
 		letter-spacing: 0.2px;
 		transform: rotate(16.95deg);
 		top: 2vw;
-		right: 38%;
+		right: 34.5%;
 		font-weight: 700;
 		@include adaptiv-font(49, 10);
 		a {
@@ -766,7 +767,7 @@ button:active {
 	.block-jump {
 		.Subscribe {
 			top: 6%;
-			right: 38%;
+			//right: 38%;
 			@include adaptiv-font(49, 49);
 		}
 		.block-jump__img {

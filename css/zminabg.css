@@ -56,7 +56,8 @@ button {
 }
 html.dark .wrap {
 	
-	background-color: #fee7e0;
+	/*background-color: #fee7e0;*/
+	background: url(../img/bg.jpeg);
 }
 html.light .wrap {
 	background-color: #fff;
